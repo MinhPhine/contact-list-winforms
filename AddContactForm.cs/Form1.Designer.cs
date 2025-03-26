@@ -1,6 +1,6 @@
-﻿namespace ContactList
+﻿namespace AddContactForm.cs
 {
-    partial class MainForm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // txtFullName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(229, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh Sách Liên Hệ";
+            this.txtFullName.Location = new System.Drawing.Point(147, 42);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(100, 20);
+            this.txtFullName.TabIndex = 0;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(374, 41);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtPhoneNumber.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(99, 138);
+            this.button1.Location = new System.Drawing.Point(163, 159);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Thêm Liên Hệ";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // MainForm
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Name = "MainForm";
+            this.Controls.Add(this.txtPhoneNumber);
+            this.Controls.Add(this.txtFullName);
+            this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -67,7 +73,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.Button button1;
     }
 }
